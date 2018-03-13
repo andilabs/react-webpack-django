@@ -8,6 +8,7 @@ export default class Main extends React.Component {
 	render() {
 		return (
 			<main>
+				<h2>content below:</h2>
 				<Switch>
 					<Route exact path='/' component={HomePage}/>
 					<Route path='/about' component={AboutPage}/>

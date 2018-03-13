@@ -15,10 +15,10 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
 
+
 def test(request):
     template = loader.get_template('myapp/test.html')
     context = {
         'foo': 'bar',
     }
     return HttpResponse(template.render(context, request))
-    # return HttpResponse("Hello, world. You're at the TEST.")
